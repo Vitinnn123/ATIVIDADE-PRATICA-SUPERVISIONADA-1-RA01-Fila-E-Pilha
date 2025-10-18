@@ -1,2 +1,9 @@
-# ATIVIDADE-PRATICA-SUPERVISIONADA-1-RA01-Fila-E-Pilha
-Projeto em Java que implementa um sistema de gerenciamento de atendimento ao cliente utilizando listas encadeadas para simular pilha (histórico de solicitações) e fila (ordem de atendimento).
+# Sistema de Gerenciamento de Atendimento ao Cliente em Java (Fila e Pilha)
+- **Disciplina:** Resolução de Problemas Estruturados em Computação
+- **Instituição:** Pontifícia Universidade Católica do Paraná    
+- **Professor:** Andrey Cabral Meira
+- **Alunos:**  
+  - Gustavo Ferronatto Ribeiro — [@gustavoferronattoribeiro](https://github.com/gustavoferronattoribeiro)
+  - Sophia Post Ploposki — [@]()  
+  - Victor Augusto Esmaniotto — [@Vitinnn123](https://github.com/Vitinnn123) 
+---
