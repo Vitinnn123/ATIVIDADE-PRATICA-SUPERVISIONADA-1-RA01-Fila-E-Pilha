@@ -7,3 +7,29 @@
   - Sophia Post Ploposki — [@]()  
   - Victor Augusto Esmaniotto — [@Vitinnn123](https://github.com/Vitinnn123) 
 ---
+
+## Objetivo
+O objetivo deste projeto é criar em Java um sistema de atendimento ao cliente utilizando listas encadeadas para implementar duas estruturas: uma fila, que organiza a ordem de atendimento, e uma pilha, que armazena o histórico de solicitações.
+
+---
+
+## Estrutura do Projeto
+
+```
+/Projeto Atendimento (Fila E Pilha)
+└── README.md (Documentação do projeto)
+  /Código completo (Comentado)
+  └── Main.java
+  /Código completo (Não Comentado)
+  └── Main.java
+```
+
+---
+## Explicação Código
+
+---
+
+## Licença
+
+Este projeto foi desenvolvido **exclusivamente para fins educacionais** na disciplina de *Resolução de Problemas Estruturados em Computação* da Pontifícia Universidade Católica do Paraná.
+Não possui finalidade comercial e não concede direitos de uso além do contexto acadêmico.
