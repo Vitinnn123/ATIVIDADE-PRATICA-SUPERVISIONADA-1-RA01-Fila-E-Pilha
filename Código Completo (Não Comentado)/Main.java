@@ -1,10 +1,9 @@
 class Elemento {
     String id;
     String descricao;
-    String dataHora;   // usado para histórico
-    String nome;       // usado para fila
+    String dataHora;   
+    String nome;       
 
-    // Construtor Geral
     Elemento(String id, String nome, String descricao, String dataHora) {
         this.id = id;
         this.nome = nome;
@@ -13,7 +12,6 @@ class Elemento {
     }
 }
 
-// Nó da lista encadeada
 class Node {
     Elemento dado;
     Node proximo;
@@ -24,11 +22,10 @@ class Node {
     }
 }
 
-// Pilha
+
 class Pilha {
     private Node topo;
 
-    // Adiciona elemento ao topo
     public void empilhar(Elemento e) {
         Node novo = new Node(e);
         novo.proximo = topo;
@@ -36,7 +33,6 @@ class Pilha {
         System.out.println("Solicitação adicionada ao histórico: " + e.id + " - " + e.descricao);
     }
 
-    // Remove elemento do topo
     public Elemento desempilhar() throws Exception {
         if (estaVazia()) {
             throw new Exception("Histórico vazio! Nenhuma solicitação para remover.");
@@ -47,12 +43,10 @@ class Pilha {
         return removido;
     }
 
-    // Verifica se a pilha está vazia
     public boolean estaVazia() {
         return topo == null;
     }
 
-    // Exibe todo o histórico
     public void exibir() {
         if (estaVazia()) {
             System.out.println("Histórico vazio!");
@@ -68,12 +62,10 @@ class Pilha {
     }
 }
 
-// Fila
 class Fila {
     private Node frente;
     private Node tras;
 
-    // Cliente vai pro fim da fila
     public void enfileirar(Elemento e) {
         Node novo = new Node(e);
         if (tras == null) {
@@ -86,7 +78,6 @@ class Fila {
         System.out.println("Cliente adicionado à fila: " + e.nome + " - " + e.descricao);
     }
 
-    // Atende o Cliente (Remove ele da fila)
     public Elemento desenfileirar() throws Exception {
         if (estaVazia()) {
             throw new Exception("Fila vazia! Nenhum cliente para atender.");
@@ -98,12 +89,10 @@ class Fila {
         return atendido;
     }
 
-    // Verificar se a fila está vazia
     public boolean estaVazia() {
         return frente == null;
     }
 
-    // Exibir fila de atendimento
     public void exibir() {
         if (estaVazia()) {
             System.out.println("Fila vazia!");
@@ -121,34 +110,26 @@ class Fila {
     }
 }
 
-// Main
 public class Main {
     public static void main(String[] args) {
         try {
-            // Cria a pilha e fila
             Pilha historico = new Pilha();
             Fila fila = new Fila();
 
-            // Adiciona solicitações (histórico)
-            // O campo "nome" não se aplica nesse caso logo ele é definido como "null"
             historico.empilhar(new Elemento("REQ001", null, "Instalação de software", "2024-08-20 10:30"));
             historico.empilhar(new Elemento("REQ002", null, "Manutenção preventiva", "2024-08-20 11:00"));
             historico.empilhar(new Elemento("REQ003", null, "Atualização de sistema", "2024-08-20 11:30"));
             historico.empilhar(new Elemento("REQ004", null, "Suporte técnico", "2024-08-20 12:00"));
             historico.exibir();
 
-            // Remove uma solicitação
             historico.desempilhar();
             historico.exibir();
-
-            // Adiciona clientes (fila)
-            // O campo "dataHora" não se aplica nesse caso logo ele é definido como "null"
+            
             fila.enfileirar(new Elemento("CLI001", "Maria Silva", "Dúvida sobre produto", null));
             fila.enfileirar(new Elemento("CLI002", "João Souza", "Reclamação de serviço", null));
             fila.enfileirar(new Elemento("CLI003", "Ana Costa", "Solicitação de reembolso", null));
             fila.exibir();
 
-            // Atende um cliente
             fila.desenfileirar();
             fila.exibir();
 
