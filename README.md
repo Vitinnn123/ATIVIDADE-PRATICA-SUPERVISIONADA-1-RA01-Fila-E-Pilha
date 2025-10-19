@@ -4,7 +4,7 @@
 - **Professor:** Andrey Cabral Meira
 - **Alunos:**  
   - Gustavo Ferronatto Ribeiro — [@gustavoferronattoribeiro](https://github.com/gustavoferronattoribeiro)
-  - Sophia Post Ploposki — [@]()  
+  - Sophia Post Ploposki — [@sosopost](https://github.com/sosopost)  
   - Victor Augusto Esmaniotto — [@Vitinnn123](https://github.com/Vitinnn123) 
 ---
 
