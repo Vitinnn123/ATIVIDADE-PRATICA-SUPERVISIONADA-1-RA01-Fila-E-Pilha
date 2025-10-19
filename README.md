@@ -18,9 +18,9 @@ O objetivo deste projeto é criar em Java um sistema de atendimento ao cliente u
 ```
 /Projeto Atendimento (Fila E Pilha)
 └── README.md (Documentação do projeto)
-  /Código completo (Comentado)
+  /Código Completo (Comentado)
   └── Main.java
-  /Código completo (Não Comentado)
+  /Código Completo (Não Comentado)
   └── Main.java
 ```
 
